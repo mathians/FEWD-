@@ -1,0 +1,62 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7f0f8;
+        }
+        header {
+            background-color: #2e3b4e;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #2e3b4e;
+            font-size: 2em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #self-introduction {
+            background-color: #f9f9f9;
+        }
+        #projects {
+            background-color: #fff3e0;
+            border-left: 6px solid #ff9800;
+        }
+        #feedback-achievements {
+            background-color: #e3f2fd;
+        }
+        #education {
+            background-color: #f3e5f5;
+            border-left: 6px solid #9c27b0;
+        }
+        footer {
+            background-color: #2e3b4e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }

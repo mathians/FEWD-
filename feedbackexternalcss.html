@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="feedback-form">
+        <h1>Customer Feedback</h1>
+        <form action="#" method="POST">
+            <label for="name">Name (Optional)</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <label for="email">Email (Optional)</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+
+            <label for="phone">Phone (Optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+
+            <label>Rating</label>
+            <div class="rating-container">
+                <input type="radio" id="rating1" name="rating" value="1">
+                <label for="rating1">1 - Poor</label>
+                <input type="radio" id="rating2" name="rating" value="2">
+                <label for="rating2">2 - Fair</label>
+                <input type="radio" id="rating3" name="rating" value="3">
+                <label for="rating3">3 - Good</label>
+                <input type="radio" id="rating4" name="rating" value="4">
+                <label for="rating4">4 - Very Good</label>
+                <input type="radio" id="rating5" name="rating" value="5">
+                <label for="rating5">5 - Excellent</label>
+            </div>
+
+            <label for="questions">Any Questions or Concerns?</label>
+            <textarea id="questions" name="questions" placeholder="Type your questions here..."></textarea>
+
+            <label for="comments">Additional Comments (Optional)</label>
+            <textarea id="comments" name="comments" placeholder="Any additional thoughts?"></textarea>
+
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+    </div>
+
+</body>
+</html>
