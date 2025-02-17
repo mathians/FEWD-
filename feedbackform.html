@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .feedback-form {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            width: 100%;
+            max-width: 600px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+        .rating-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .rating-container input {
+            width: auto;
+            margin-right: 10px;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .submit-btn {
+            background-color: #3498db;
+            color: white;
+            font-size: 18px;
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+        .optional {
+            font-size: 0.85em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="feedback-form">
+        <h1>Customer Feedback</h1>
+        <form action="#" method="POST">
+            <label for="name">Name (Optional)</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <label for="email">Email (Optional)</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+
+            <label for="phone">Phone (Optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+
+            <label>Rating</label>
+            <div class="rating-container">
+                <input type="radio" id="rating1" name="rating" value="1">
+                <label for="rating1">1 - Poor</label>
+                <input type="radio" id="rating2" name="rating" value="2">
+                <label for="rating2">2 - Fair</label>
+                <input type="radio" id="rating3" name="rating" value="3">
+                <label for="rating3">3 - Good</label>
+                <input type="radio" id="rating4" name="rating" value="4">
+                <label for="rating4">4 - Very Good</label>
+                <input type="radio" id="rating5" name="rating" value="5">
+                <label for="rating5">5 - Excellent</label>
+            </div>
+
+            <label for="questions">Any Questions or Concerns?</label>
+            <textarea id="questions" name="questions" placeholder="Type your questions here..."></textarea>
+
+            <label for="comments">Additional Comments (Optional)</label>
+            <textarea id="comments" name="comments" placeholder="Any additional thoughts?"></textarea>
+
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+    </div>
+
+</body>
+</html>
