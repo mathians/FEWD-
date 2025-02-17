@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Shritij Reddy Ramidi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7f0f8;
+        }
+        header {
+            background-color: #2e3b4e;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #2e3b4e;
+            font-size: 2em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #self-introduction {
+            background-color: #f9f9f9;
+        }
+        #projects {
+            background-color: #fff3e0;
+            border-left: 6px solid #ff9800;
+        }
+        #feedback-achievements {
+            background-color: #e3f2fd;
+        }
+        #education {
+            background-color: #f3e5f5;
+            border-left: 6px solid #9c27b0;
+        }
+        footer {
+            background-color: #2e3b4e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shritij Reddy Ramidi</h1>
+        <p>Welcome to my portfolio page!</p>
+    </header>
+
+    <section id="self-introduction">
+        <h2>Self Introduction</h2>
+        <p>Hello! I am Shritij Reddy Ramidi, a passionate developer with a love for coding and learning new technologies. I enjoy solving problems and creating impactful projects. This is my portfolio where you can find more about my skills, work, and experiences.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Git & GitHub</li>
+            <li>React.js</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects / Work Experiences</h2>
+        <p>Below are some of my projects and work experiences:</p>
+        <ul>
+            <li><a href="https://github.com/your-git-link" target="_blank">Project 1: Description of Project 1</a></li>
+            <li><a href="https://github.com/your-git-link" target="_blank">Project 2: Description of Project 2</a></li>
+        </ul>
+    </section>
+
+    <section id="feedback-achievements">
+        <h2>Feedback / Achievements</h2>
+        <p>Here are some of the feedbacks and achievements:</p>
+        <ul>
+            <li>Received positive feedback from peers on collaborative projects.</li>
+            <li>Awarded "Best Developer" in a recent hackathon.</li>
+            <li>Smart India Hackathon (SIH) 2024 winner</li>   
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education Profile</h2>
+        <p>Bachelor's degree in Computer Science from KMIT (Keshav Memorial Institute of Technology)</p>
+        <p>Completed various online courses in web development, data science, and software engineering.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>You can reach me through the following:</p>
+        <ul>
+            <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+            <li>Phone: +1234567890</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn Profile</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shritij Reddy Ramidi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
