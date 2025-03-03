@@ -3,135 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Feedback</title>
-    <!-- Bootstrap CDN -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aSo4kd2xkTS5xuYPdOUz7X3lPb/jqUtg2vC47zgsjA3x6mjW9O8IWxv9Dh5M/4g" crossorigin="anonymous">
+    <title>Feedback Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: 'Helvetica Neue', sans-serif;
-            background-color: #eef2f3;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: #f8f9fa;
         }
-        .feedback-form {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            padding: 25px;
-            width: 100%;
-            max-width: 600px;
+        .card {
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            background: white;
         }
-        h1 {
-            text-align: center;
-            color: #333;
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-        label {
+        h2 {
+            color: #007bff;
             font-weight: bold;
-            display: block;
-            margin: 10px 0 5px;
         }
-        .rating-container {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .rating-container input {
-            width: auto;
-            margin-right: 10px;
-        }
-        textarea {
-            resize: vertical;
-            height: 100px;
-        }
-        .submit-btn {
-            background-color: #3498db;
-            color: white;
-            font-size: 18px;
-            padding: 15px;
+        .btn-primary {
+            background-color: #007bff;
             border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            width: 100%;
-            transition: background-color 0.3s ease;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: 0.3s;
         }
-        .submit-btn:hover {
-            background-color: #2980b9;
+        .btn-primary:hover {
+            background-color: #0056b3;
         }
-        .optional {
-            font-size: 0.85em;
-            color: #7f8c8d;
+        .form-label {
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
-
-    <div class="feedback-form">
-        <h1>Customer Feedback</h1>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="name">Name (Optional)</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email (Optional)</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Your email">
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone (Optional)</label>
-                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone number">
-            </div>
-
-            <div class="form-group">
-                <label>Rating</label>
-                <div class="rating-container">
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="rating1" name="rating" value="1">
-                        <label class="custom-control-label" for="rating1">1 - Poor</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="rating2" name="rating" value="2">
-                        <label class="custom-control-label" for="rating2">2 - Fair</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="rating3" name="rating" value="3">
-                        <label class="custom-control-label" for="rating3">3 - Good</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="rating4" name="rating" value="4">
-                        <label class="custom-control-label" for="rating4">4 - Very Good</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="rating5" name="rating" value="5">
-                        <label class="custom-control-label" for="rating5">5 - Excellent</label>
-                    </div>
+    <div class="container mt-5">
+        <div class="card shadow p-4" id="form-container">
+            <h2 class="text-center">Feedback Form</h2>
+            <form id="feedbackForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
                 </div>
-            </div>
-
-            <div class="form-group">
-                <label for="questions">Any Questions or Concerns?</label>
-                <textarea class="form-control" id="questions" name="questions" placeholder="Type your questions here..."></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="comments">Additional Comments (Optional)</label>
-                <textarea class="form-control" id="comments" name="comments" placeholder="Any additional thoughts?"></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Submit Feedback</button>
-        </form>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="form-control">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="rating" class="form-label">Rating</label>
+                    <select id="rating" name="rating" class="form-select" required>
+                        <option value="">--Select Rating--</option>
+                        <option value="1">1 - Poor</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="3">3 - Good</option>
+                        <option value="4">4 - Very Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="questions" class="form-label">Questions regarding product or service</label>
+                    <textarea id="questions" name="questions" class="form-control" rows="4" required></textarea>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="comments" class="form-label">Additional Comments (Optional)</label>
+                    <textarea id="comments" name="comments" class="form-control" rows="3"></textarea>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div id="thankYouMessage" class="text-center text-success mt-4" style="display: none;">
+            <h3>Thank you for your feedback....</h3>
+        </div>
     </div>
-
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy27f2eD6p5wL95s1Y5s5Xo1aFu2pLhr+oA0Tve4" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqD6bWZYoC6Vd8zzK9A9Eljb1hGZpvnkE22wpXvKQmFrh" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-4En5Zsmz9L0y0LcmHls6u30E9KHLzZvJfBwrWbo8KCZWr3wLTo9Pwl7Oj5jKhDBH" crossorigin="anonymous"></script>
+    
+    <script>
+        document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value,
+                rating: document.getElementById("rating").value,
+                questions: document.getElementById("questions").value,
+                comments: document.getElementById("comments").value
+            };
+            
+            let jsonData = JSON.stringify(formData, null, 2);
+            let blob = new Blob([jsonData], { type: "application/json" });
+            let a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "feedback.json";
+            a.click();
+            
+            document.getElementById("form-container").style.display = "none";
+            document.getElementById("thankYouMessage").style.display = "block";
+        });
+    </script>
+    
 </body>
 </html>
