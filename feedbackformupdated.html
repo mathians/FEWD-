@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aSo4kd2xkTS5xuYPdOUz7X3lPb/jqUtg2vC47zgsjA3x6mjW9O8IWxv9Dh5M/4g" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .feedback-form {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            width: 100%;
+            max-width: 600px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .rating-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .rating-container input {
+            width: auto;
+            margin-right: 10px;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .submit-btn {
+            background-color: #3498db;
+            color: white;
+            font-size: 18px;
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+        .optional {
+            font-size: 0.85em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="feedback-form">
+        <h1>Customer Feedback</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name (Optional)</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email (Optional)</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone (Optional)</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone number">
+            </div>
+
+            <div class="form-group">
+                <label>Rating</label>
+                <div class="rating-container">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="rating1" name="rating" value="1">
+                        <label class="custom-control-label" for="rating1">1 - Poor</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="rating2" name="rating" value="2">
+                        <label class="custom-control-label" for="rating2">2 - Fair</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="rating3" name="rating" value="3">
+                        <label class="custom-control-label" for="rating3">3 - Good</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="rating4" name="rating" value="4">
+                        <label class="custom-control-label" for="rating4">4 - Very Good</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="rating5" name="rating" value="5">
+                        <label class="custom-control-label" for="rating5">5 - Excellent</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="questions">Any Questions or Concerns?</label>
+                <textarea class="form-control" id="questions" name="questions" placeholder="Type your questions here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments (Optional)</label>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Any additional thoughts?"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy27f2eD6p5wL95s1Y5s5Xo1aFu2pLhr+oA0Tve4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqD6bWZYoC6Vd8zzK9A9Eljb1hGZpvnkE22wpXvKQmFrh" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-4En5Zsmz9L0y0LcmHls6u30E9KHLzZvJfBwrWbo8KCZWr3wLTo9Pwl7Oj5jKhDBH" crossorigin="anonymous"></script>
+</body>
+</html>
